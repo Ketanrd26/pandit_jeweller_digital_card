@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./App.scss";
 import { FaInstagram } from "react-icons/fa6";
 import { GoGlobe } from "react-icons/go";
@@ -10,6 +10,7 @@ import { FiPhone } from "react-icons/fi";
 import { GoBook } from "react-icons/go";
 import logo from "./assets/logo.webp";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { QRCode } from "antd";
 
 function App() {
   const saveContact = () => {
@@ -39,6 +40,19 @@ END:VCARD`;
     // Cleanup
     document.body.removeChild(link);
   };
+
+  const qrRef = useRef(null);
+
+  // const downloadQR = () => {
+  //   const canvas = qrRef.current.querySelector("canvas");
+  //   if (canvas) {
+  //     const url = canvas.toDataURL("image/png");
+  //     const a = document.createElement("a");
+  //     a.href = url;
+  //     a.download = "qrcode.png";
+  //     a.click();
+  //   }
+  // };
 
   return (
     <>
@@ -78,8 +92,7 @@ END:VCARD`;
                   <MdOutlineLocationOn />
                 </span>
                 <a style={{ fontSize: "16px" }}>
-                  Ganj Peth, Pune,
-                  Maharashtra 411042
+                  Ganj Peth, Pune, Maharashtra 411042
                 </a>
               </a>
 
@@ -96,6 +109,16 @@ END:VCARD`;
             </div>
           </div>
         </div>
+
+        {/* <div class="qr" ref={qrRef}>
+          <QRCode
+            errorLevel="H"
+            value="https://pandit-jeweller-digital-card.vercel.app/"
+            icon={logo}
+            size={200}
+          />
+        </div>
+        <button onClick={downloadQR}>Download QR</button> */}
       </div>
     </>
   );

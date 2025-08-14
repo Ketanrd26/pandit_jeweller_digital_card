@@ -1,0 +1,208 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.crad_parent {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(145, 131, 87, 0.575);
+  padding: 0px !important;
+
+  .scanner {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+  }
+
+  .card {
+    width: 375px;
+    height: auto;
+    background-color: white;
+    .topsection {
+      width: 100%;
+      height: 300px;
+      background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)),
+        url("./assets/bg.webp");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0px 10px;
+
+      .span {
+        width: 100px;
+        aspect-ratio: 1;
+        padding: 10px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 0px 0px 20px 20px;
+
+        img {
+          width: 140%;
+        }
+      }
+    }
+
+    .bottom {
+      height: 70%;
+      width: 100%;
+      background: white;
+      position: relative;
+      z-index: 2;
+      transform: translateY(-10%);
+
+      border-radius: 40px 40px 0px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 40px;
+
+      h2 {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 32px;
+        font-weight: 600;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          border-radius: 10px;
+          padding: 10px;
+          text-decoration: none;
+
+          .box-contact {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .three-contact {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          }
+
+          span {
+            border-radius: 5px;
+            padding: 7px;
+            background: #9b733e21;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff9100;
+            font-size: 24px;
+          }
+
+          a {
+            font-size: 22px;
+            letter-spacing: 0.7px;
+            word-spacing: 1px;
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .btn {
+        padding: 10px 20px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff9100;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 10px 15px;
+        border-radius: 15px 15px 0px 0px;
+
+        a {
+          border-radius: 5px;
+          padding: 7px;
+          background: #9b733e21;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ff9100;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .crad_parent {
+    .card {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (min-height: 810px) and (max-width: 500px) {
+  .crad_parent {
+    .card {
+      position: relative;
+
+      .topsection {
+        height: 450px;
+      }
+      .bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: auto !important;
+      }
+    }
+  }
+}

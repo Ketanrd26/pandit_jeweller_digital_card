@@ -18,7 +18,7 @@ function App() {
     const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:Wave solutions
+FN:Pandit Jewellers
 ORG:Pandit Jewellers
 TITLE:Pandit Jewellers
 TEL:+919529540766

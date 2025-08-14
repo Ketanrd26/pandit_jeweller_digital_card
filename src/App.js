@@ -22,7 +22,7 @@ FN:Wave solutions
 ORG:Pandit Jewellers
 TITLE:Pandit Jewellers
 TEL:+919529540766
-URL:https://share.google/ipqUSjEH0RemUjx9w
+URL:https://g.page/r/CQAAANDyQUwwEAI/review
 END:VCARD`;
 
     // Create a Blob for the vCard file
@@ -66,7 +66,7 @@ END:VCARD`;
           <div class="bottom">
             <div class="social-icons">
               <a
-                href="https://www.instagram.com/s.r.pandit_jewellers?igsh=MWRjaGxkeWl6M2pyaA=="
+                href="https://www.instagram.com/s.r.pandit_jewellers/"
                 target="blank"
               >
                 <FaInstagram />
@@ -79,7 +79,7 @@ END:VCARD`;
               </a>
             </div>
             <div class="content">
-              <a class="box" href="https://share.google/ipqUSjEH0RemUjx9w">
+              <a class="box" href="https://g.page/r/CQAAANDyQUwwEAI/review">
                 <span>
                   {" "}
                   <GoGlobe />
